@@ -67,6 +67,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\blueHref}[2]{\href{#1}{\color{blue} #2}}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -80,12 +82,12 @@
 \end{tabular*}
 
 
-\section{Profile}
-  A student who has been interested in programming and everything related to it since childhood. I'm constantly trying to learn something new.
-
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
+  	\resumeSubheading
+      {School of data analysis (Yandex)}{Saint Petersburg, Russia}
+      {Machine learning}{Sep. 2022 -- Present}
     \resumeSubheading
       {Saint Petersburg State University}{Saint Petersburg, Russia}
       {Bachelor of Computer Science  }{Sep. 2020 -- Present}
@@ -97,29 +99,53 @@
 %-----------PROJECTS-----------------
 \section{Selected projects}
   \resumeSubHeadingListStart
-  	\resumeSubItem{\href{https://github.com/robozmey/unELFer}{UnELFer}}
+  	\resumeSubItem{\blueHref{https://github.com/robozmey/Yenisey}{Yenisey}}
+      {Base for videogame engine in development written on \textbf{C++} with 				\textbf{OpenGL}. Created as university assignment.}
+  	\resumeSubItem{\blueHref{https://github.com/robozmey/unELFer}{UnELFer}}
       {Disassembler for RISC-V. An university assignment written in \textbf{C++}.}
-    \resumeSubItem{\href{https://github.com/robozmey/Yenisey}{Yenisey}}
-      {Base for videogame engine in development written on \textbf{C++} with \textbf{OpenGL}. Created as university assignment.}
     \resumeSubItem{Lambda Calculus}
       {A program that can $\beta$-reduce lambda terms and check their $\alpha\beta$-equivalence. An university assignment written in \textbf{Haskell}.}
-    \resumeSubItem{\href{https://github.com/robozmey/matlog-formulas}{Formula Normalizer}}
+    \resumeSubItem{\blueHref{https://github.com/robozmey/matlog-formulas}{Formula Normalizer}}
       {A simple program that translates formulas into some normal forms. An university assignment written in \textbf{Haskell}.}
 %    \resumeSubItem{\href{https://github.com/SmnTin/simple-type-checker/tree/system-f}{System F}}
 %      {Type checker for Church-style Polymorphic Lambda Calculus (System F). An assignment written in \textbf{Haskell}.}
-    \resumeSubItem{{Olympiad results email sender }}
+    \resumeSubItem{{Olympiad results email sender}}
       {Tool that sends out the verified works to the participants via e-mail. A task from organizer of the ROI-regional written in \textbf{C++ with QT}.}
+     \resumeSubItem{\blueHref{https://github.com/robozmey/phoenix_proof}{Phoenix Proof}}
+      {TLA+ specification for \blueHref{https://arxiv.org/abs/2106.01240}{Phoenix Vault} smart contract. \textbf{TLA+}}{}
 %    \resumeSubItem{\href{https://github.com/robozmey/haskell-nengine}{Nengine}}{N-dimensional engine for videogames. My project written in \textbf{Haskell}.}
-    \resumeSubItem{\href{https://github.com/robozmey/paperwar}{PaperWar}}{Online web-game, with two teams fight for generator. Main feature: only one stat - power, witch uses as for regeneration as for shooting. My project written in \textbf{NodeJS}.}
+    \resumeSubItem{\blueHref{https://github.com/robozmey/paperwar}{PaperWar}}{Online web-game, with two teams fight for generator. Main feature: only one stat - power, witch uses as for regeneration as for shooting. My project written in \textbf{NodeJS}.}
 
   \resumeSubHeadingListEnd
   %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
   	\resumeSubheading{Internship in Yandex}
-      {Saint-Petersburg}{Intern}{2022}
+      {Saint-Petersburg}{MySQL database modification}{2022}
+      
+    \resumeSubheading{Internship in ABS}
+      {Krasnoyarsk}{Addon for 1C-Accounting}{2018}
 
   \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C, C++, Haskell, Python, JavaScript, SQL, Rust, Kotlin }
+    }
+    \item{
+      \textbf{Technologies}{: OpenGL, OpenCV, OpenCL, PyTorch, 1C }
+    }
+  \resumeSubHeadingListEnd
+
+%--------EXTRACURRICULAR ACTIVITIES------------
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Member of the organizing committee of the regional stage of the ROI}{}
+      {Basically, scanning and sending verified works to participants. Also assistance in organizing.}{Winter 2021}
+  \resumeSubHeadingListEnd
+
 %-----------ACADEMIC ACHIEVEMENTS-----------------
 \section{Academic Achievements}
   \resumeSubHeadingListStart
@@ -133,31 +159,12 @@
     {Winner.}{2019}
     \resumeSubheading{Kvantoriada-2017}{Skolkovo, Russia}
     {Finalist.}{2017}
-    \resumeSubheading{World Robot Conference}{Bejing, Chinanda}
+    \resumeSubheading{World Robot Conference}{Bejing, China}
     {Participant.}{2015}
     \resumeSubheading{Russian Robot Olympiad}{Innopolis, Russia}
     {2nd degree diploma in finals.}{2015}
 
   \resumeSubHeadingListEnd
-
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: C, C++, Haskell, Python, JavaScript, SQL, OpenGL }
-    }
-    \item{
-      \textbf{Skills}{: Basic of Data sctructures; Software Optimization, Software Design }
-    }
-  \resumeSubHeadingListEnd
-
-%--------EXTRACURRICULAR ACTIVITIES------------
-\section{Extracurricular Activities}
-  \resumeSubHeadingListStart
-    \resumeSubheading{Member of the organizing committee of the regional stage of the ROI}{}
-      {Basically, scanning and sending verified works to participants. Also assistance in organizing.}{Winter 2021}
-  \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 
